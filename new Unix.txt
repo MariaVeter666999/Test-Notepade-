@@ -1,0 +1,38 @@
+sh-4.4$ mkdir Masher                                                
+sh-4.4$ cd Masher                                                   
+sh-4.4$ touch file{A..E}                                            
+sh-4.4$ ls -la                                                      
+total 8                                                             
+drwxr-xr-x 2 17608 17608 4096 Oct 18 10:                            
+drwxrwxrwx 1 cg    cg    4096 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608    0 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608    0 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608    0 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608    0 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608    0 Oct 18 10:                            
+sh-4.4$ date > fileA                                                
+sh-4.4$ date > fileB                                                
+sh-4.4$ date > fileC                                                
+sh-4.4$ date > fileD                                                
+sh-4.4$ date > fileE 
+sh-4.4$ ls -la                                                      
+total 28                                                            
+drwxr-xr-x 2 17608 17608 4096 Oct 18 10:                            
+drwxrwxrwx 1 cg    cg    4096 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608   29 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608   29 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608   29 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608   29 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608   29 Oct 18 10:                            
+sh-4.4$ grep -ch 2017 file* | wc -l                                 
+5                                                                   
+sh-4.4$ cd -                                                        
+/home/cg/root                                                       
+sh-4.4$ rm -r "Masher"                                              
+sh-4.4$ ls -la                                                      
+total 16                                                            
+drwxrwxrwx 1 cg    cg    4096 Oct 18 10:                            
+drwxrwxrwx 1 cg    cg    4096 Sep  9 10:                            
+-rw-r--r-- 1 17608 17608  207 Oct 18 10:                            
+-rw-r--r-- 1 17608 17608  978 Oct 18 10:                            
+                  
